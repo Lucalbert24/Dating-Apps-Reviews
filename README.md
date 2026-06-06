@@ -1,30 +1,45 @@
-# Generational Digital Divide in Italy(Machine Learning Analysis)
+# Dating App Review
 
-This repository contains a statistical analysis of the generational digital divide in Italy, developed as a bachelor thesis project.
+This repository contains a text analysis of user reviews from three dating apps: Tinder, Bumble and Hinge.
 
-The study uses ISTAT AVQ survey data from 2021 and 2022 to analyse how Internet usage differs across age groups and socio-demographic characteristics.
+The aim of the project is to compare user perceptions across platforms by analysing review sentiment and identifying the main topics discussed by users in 2021.
 
-## Content
+## Repository Content
 
-- `data/`: dataset used for the analysis
-- `code/`: R script for data cleaning, index construction and statistical analysis
-- `report/`: final thesis report in PDF format
+- `code/`: R code used for the analysis
+- `report/`: final report in PDF format
+
+## Data
+
+The dataset is not included in this repository.
+
+The data used in the project come from Kaggle, and the download link is provided inside the report. To reproduce the analysis, download the dataset and update the file path in the R script if necessary.
 
 ## Methods
 
-The project applies:
+The analysis is performed in R and includes:
 
-- data cleaning and harmonization
-- composite index construction
-- factor analysis
-- k-means clustering
-- Random Forest
-- logistic regression
+- text preprocessing
+- word clouds
+- sentiment analysis using the Bing lexicon
+- topic modeling with the Mixture of Unigrams model
+- topic number selection using AIC
+- manual aggregation of topics into interpretable macro-topics
 
-## Main Focus
+## Personal Contribution
 
-The analysis focuses on the secondary digital divide, studying not only Internet access, but also differences in how people use the Internet for information, entertainment, social interaction, health services and financial services.
+My contribution focused on the overall structure of the study and on Chapter 6 of the report, dedicated to topic detection.
 
-## Author
+In particular, I worked on organizing the methodological workflow and applying the Mixture of Unigrams model to identify the main recurring topics in the reviews.
 
-Luca Alberti
+## Main Findings
+
+The analysis shows a prevalence of negative sentiment across the three applications.
+
+The main sources of dissatisfaction are related to payments, premium features, fake profiles, banned or blocked accounts, technical problems and match quality.
+
+## Authors
+
+Luca Alberti  
+Matteo Canton  
+Miriam Strepparava
